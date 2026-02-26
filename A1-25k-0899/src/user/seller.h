@@ -1,16 +1,20 @@
 #ifndef SELLER_H
 #define SELLER_H
-#include "listing.h"
-class Seller{
-    private:
-    double rating;
-    Listing *listings;
-    bool isDealer;
-    public:
-    void postAd();
-    void updateAd();
-    void deleteAd();
-    void viewMyAds();
 
+#include "User.h"
+#include "Listing.h"
+
+class Seller : public User {
+private:
+    Listing listings[10];
+    int listingCount;
+
+public:
+    Seller(string, string, string, string);
+    void login();
+    void logout();
+    void postAd(Listing);
+    void viewMyAds();
 };
+
 #endif

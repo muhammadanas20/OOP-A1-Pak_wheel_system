@@ -1,20 +1,25 @@
 #ifndef USER_H
 #define USER_H
-#include <string>
+
+#include <iostream>
 using namespace std;
-class User
-{
-private:
-    string userID;
+
+class User {
+protected:
+    string userId;
     string name;
     string phone;
     string city;
     bool isVerified;
 
 public:
-    virtual void login();
-    virtual void logout();
-    virtual void viewProfile();
-    virtual void updateProfile();
+    User();
+    User(string, string, string, string);
+
+    virtual void login() = 0;
+    virtual void logout() = 0;
+    virtual void viewProfile() const;
+    virtual void updateProfile(string);
 };
+
 #endif
