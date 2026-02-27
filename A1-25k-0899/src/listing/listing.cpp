@@ -55,3 +55,14 @@ void Listing::display() const {
 int Listing::getTotalListings() {
     return totalListings;
 }
+Listing& Listing::operator=(const Listing& l) {
+    if (this != &l) {
+        car = l.car;
+        specs = l.specs;
+        price = l.price;
+        city = l.city;
+        isApproved = l.isApproved;
+        isFeatured = l.isFeatured;
+    }
+    return *this;
+}

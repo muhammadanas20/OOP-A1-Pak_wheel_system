@@ -19,6 +19,7 @@ public:
     Listing();
     Listing(Vehicle, CarSpecification, double, string);
     Listing(const Listing&);
+    Listing& operator=(const Listing&);
 
     void publish();
     void expire();

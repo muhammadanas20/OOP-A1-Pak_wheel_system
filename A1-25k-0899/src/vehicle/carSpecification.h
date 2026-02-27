@@ -15,7 +15,7 @@ private:
 public:
     CarSpecification();
     CarSpecification(int, string, bool, bool);
-
+    CarSpecification& operator=(const CarSpecification&);
     bool isReliable() const;
     void updateMileage(int);
     void markInspected();
