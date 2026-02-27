@@ -135,6 +135,7 @@ Admin can:
 ---
 
 ## 📂 Project Structure
+```
 OnlineCarMarketplace/
 │
 ├── main.cpp
@@ -150,20 +151,22 @@ OnlineCarMarketplace/
 ├── FavoriteList.h / .cpp
 └── README.md
 
-
+```
 ---
 
-## ⚙ How to Compile
+### ⚙ How to Compile
 
 Using g++:
 
-```bash
+```
 g++ *.cpp -o marketplace
 ./marketplace
-
+```
 Or compile using any C++ IDE.
 
-📊 Design Decisions
+---
+
+### 📊 Design Decisions
 
 Inheritance reduces redundancy and models real-world hierarchy.
 
@@ -173,7 +176,9 @@ Aggregation allows independent object existence (Buyer → Listing).
 
 Pointer-based storage avoids object slicing and supports polymorphism.
 
-🚀 Future Improvements
+---
+
+### 🚀 Future Improvements
 
 File handling for persistent storage
 
@@ -185,7 +190,9 @@ Database integration
 
 Payment module simulation
 
-🎓 Learning Outcomes
+---
+
+### 🎓 Learning Outcomes
 
 Practical implementation of OOP
 
@@ -197,7 +204,9 @@ Modular software architecture
 
 Real-world system modeling
 
-👨‍💻 Author
+---
 
-Muhammad Anas
+### 👨‍💻 Author
+
+Muhammad Anas \
 BS Computer Science
