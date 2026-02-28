@@ -5,11 +5,17 @@
 
 class Admin {
 private:
+    string adminId;
+    int approvedAds;
+    int removedAds;
+    string role;
     static int totalAdmins;
 
 public:
     Admin();
     void approveListing(Listing&);
+    void rejectListing();
+    void removeListing();
     static void viewStats();
 };
 

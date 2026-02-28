@@ -10,6 +10,7 @@ protected:
     string name;
     string phone;
     string city;
+    const string USER_TYPE;
     bool isVerified;
 
 public:

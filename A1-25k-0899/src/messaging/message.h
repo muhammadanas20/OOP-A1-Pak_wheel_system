@@ -17,6 +17,8 @@ public:
 
     void send();
     void markAsRead();
+    void archiveMessage();
+    void deleteMessage();
     void display() const;
 };
 

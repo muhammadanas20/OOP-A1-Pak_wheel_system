@@ -12,6 +12,7 @@ private:
     int engineCC;
     string fuelType;
     string transmission;
+    const int MIN_YEAR = 1886;
 
 public:
     Vehicle();
