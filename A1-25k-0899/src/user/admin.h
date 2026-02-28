@@ -1,22 +1,22 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-
+#include "User.h"
 #include "Listing.h"
 
-class Admin {
+class Admin : public User {
 private:
-    string adminId;
+    static int totalAdmins; // Static 1
+    const double TAX_RATE;  // Constant 2
     int approvedAds;
     int removedAds;
-    string role;
-    static int totalAdmins;
-
+    string adminRole;
 public:
     Admin();
-    void approveListing(Listing&);
-    void rejectListing();
-    void removeListing();
-    static void viewStats();
+    Admin(const Admin& other);
+    void approveListing(Listing& l);
+    void viewSystemStats();
+    void resetApprovalCount();
+    void generateReport();
+    static void viewStats(); // Static Function 1
 };
-
 #endif

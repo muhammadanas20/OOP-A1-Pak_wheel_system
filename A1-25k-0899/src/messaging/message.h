@@ -1,6 +1,5 @@
 #ifndef MESSAGE_H
 #define MESSAGE_H
-
 #include <iostream>
 using namespace std;
 
@@ -10,16 +9,14 @@ private:
     string receiverId;
     string content;
     bool isRead;
-
+    bool isArchived;
 public:
     Message();
-    Message(string, string, string);
-
+    Message(string s, string r, string c);
+    Message(const Message& m);
     void send();
     void markAsRead();
-    void archiveMessage();
-    void deleteMessage();
     void display() const;
+    void archive();
 };
-
 #endif

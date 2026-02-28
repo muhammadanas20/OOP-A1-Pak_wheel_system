@@ -1,6 +1,5 @@
 #ifndef USER_H
 #define USER_H
-
 #include <iostream>
 using namespace std;
 
@@ -10,17 +9,15 @@ protected:
     string name;
     string phone;
     string city;
-    const string USER_TYPE;
     bool isVerified;
-
+    const string PLATFORM_NAME; // Constant 1
 public:
     User();
-    User(string, string, string, string);
-
-    virtual void login() = 0;
-    virtual void logout() = 0;
-    virtual void viewProfile() const;
-    virtual void updateProfile(string);
+    User(string id, string n, string p, string c);
+    User(const User& other);
+    void login();
+    void logout();
+    void viewProfile() const;
+    void updateProfile(string newCity);
 };
-
 #endif

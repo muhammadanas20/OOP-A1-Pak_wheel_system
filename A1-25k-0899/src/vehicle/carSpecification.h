@@ -1,6 +1,5 @@
 #ifndef CARSPECIFICATION_H
 #define CARSPECIFICATION_H
-
 #include <iostream>
 using namespace std;
 
@@ -10,16 +9,13 @@ private:
     string condition;
     bool accidentFree;
     bool inspected;
-    const int MAX_MILEAGE;
-
+    const int MAX_MILEAGE; // Constant 5
 public:
     CarSpecification();
-    CarSpecification(int, string, bool, bool);
-    CarSpecification& operator=(const CarSpecification&);
-    bool isReliable() const;
-    void updateMileage(int);
+    CarSpecification(int m, string c, bool a, bool i);
+    void updateMileage(int m);
     void markInspected();
     void showInspectionReport() const;
+    bool isReliable() const;
 };
-
 #endif

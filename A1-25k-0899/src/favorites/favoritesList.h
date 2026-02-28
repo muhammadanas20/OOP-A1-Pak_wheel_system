@@ -1,30 +1,18 @@
 #ifndef FAVORITELIST_H
 #define FAVORITELIST_H
-
-#include <iostream>
 #include "Listing.h"
-
-using namespace std;
 
 class FavoriteList {
 private:
-    Listing* savedListings[20];   // Aggregation (weak relationship)
+    Listing* savedListings[20]; // Aggregation
     int count;
-    const int MAX_FAVORITES;      // constant data member
-
+    const int MAX_FAVORITES;    // Constant 4
 public:
-    // Constructors
     FavoriteList();
-    FavoriteList(const FavoriteList&);
-
-    // Core Functions
-    void addFavorite(Listing* listing);
+    FavoriteList(const FavoriteList& other);
+    void addFavorite(Listing* l);
     void removeFavorite(int index);
     void viewFavorites() const;
     bool isEmpty() const;
-
-    // Getter
-    int getCount() const;
 };
-
 #endif
