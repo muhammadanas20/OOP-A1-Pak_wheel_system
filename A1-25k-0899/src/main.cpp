@@ -17,7 +17,7 @@ int main() {
     admin.approveListing(l1);
 
     MarketplaceSystem system;
-    system.addListing(l1);
+    system.addListing(&l1);
 
     Buyer buyer("B1","Ahmed","0311","Lahore");
     buyer.login();
