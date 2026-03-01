@@ -1,1 +1,56 @@
 .vscode/
+*.exe
+Total Listings Created: 3
+Seller logged in
+Toyota Corolla (2020) 1300cc Petrol Auto
+Mileage: 30000, Condition: Excellent, Accident Free: 1, Inspected: 1
+Price: 3.5e+006
+Honda Civic (2019) 1800cc Petrol Manual
+Mileage: 45000, Condition: Good, Accident Free: 1, Inspected: 0     
+Price: 4.2e+006
+Admin logged in as Moderator
+Admins Active: 1 | Ads Approved: 2
+Total Admins in System: 1
+Generating Admin Activity Report...
+Buyer logged in
+Searching listings based on buyer preferences...
+Message sent
+Listing added to favorites.
+Listing added to favorites.
+User: Ali | City: Karachi
+User: Ahmed | City: Lahore
+User: Guest | City: Unknown
+
+--- All Listings ---
+Toyota Corolla (2020) 1300cc Petrol Auto
+Mileage: 30000, Condition: Excellent, Accident Free: 1, Inspected: 1
+Price: 3.5e+006
+Honda Civic (2019) 1800cc Petrol Manual
+Mileage: 45000, Condition: Good, Accident Free: 1, Inspected: 0
+Price: 4.2e+006
+
+--- Search by City (Karachi) ---
+Searching Karachi...
+Toyota Corolla (2020) 1300cc Petrol Auto
+Mileage: 30000, Condition: Excellent, Accident Free: 1, Inspected: 1
+Price: 3.5e+006
+
+--- Listings After Removal ---
+Toyota Corolla (2020) 1300cc Petrol Auto
+Mileage: 30000, Condition: Excellent, Accident Free: 1, Inspected: 1
+Price: 3.5e+006
+
+--- Buyer Favorites ---
+
+Favorite #1
+Toyota Corolla (2020) 1300cc Petrol Auto
+Mileage: 30000, Condition: Excellent, Accident Free: 1, Inspected: 1
+Price: 3.5e+006
+
+Favorite #2
+Honda Civic (2019) 1800cc Petrol Manual
+Mileage: 45000, Condition: Good, Accident Free: 1, Inspected: 0
+Price: 4.2e+006
+Seller logged out
+Buyer logged out
+Admin logged out

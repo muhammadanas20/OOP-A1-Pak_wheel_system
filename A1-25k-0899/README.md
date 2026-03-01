@@ -1,9 +1,9 @@
-# 🚗 Online Car Marketplace System
+#  Online Car Marketplace System
 ### Object-Oriented Programming (C++) Project
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project is a console-based simulation of an online car marketplace system inspired by the functional structure of PakWheels (Pakistani automotive marketplace).
 
@@ -13,7 +13,7 @@ The system reverse-engineers core marketplace behavior and implements it using O
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Apply OOP principles in a real-world inspired system
 - Practice reverse engineering of a web platform
@@ -23,7 +23,7 @@ The system reverse-engineers core marketplace behavior and implements it using O
 
 ---
 
-## 🏗 System Architecture
+##  System Architecture
 
 The system models the following entities:
 
@@ -40,7 +40,7 @@ The system models the following entities:
 
 ---
 
-## 👥 User Roles
+## User Roles
 
 ### 🔹 User (Abstract Base Class)
 Common attributes:
@@ -76,7 +76,7 @@ Capabilities:
 
 ---
 
-## 🚘 Core Features
+## Core Features
 
 ### ✔ Car Listings
 Each listing contains:
@@ -120,7 +120,7 @@ Admin can:
 
 ---
 
-## 🧠 OOP Concepts Used
+##  OOP Concepts Used
 
 | Concept        | Implementation |
 |---------------|---------------|
@@ -167,7 +167,7 @@ Or compile using any C++ IDE.
 
 ---
 
-### 📊 Design Decisions
+### Design Decisions
 
 Inheritance reduces redundancy and models real-world hierarchy.
 
@@ -179,7 +179,7 @@ Pointer-based storage avoids object slicing and supports polymorphism.
 
 ---
 
-### 🚀 Future Improvements
+###  Future Improvements
 
 File handling for persistent storage
 
@@ -193,7 +193,7 @@ Payment module simulation
 
 ---
 
-### 🎓 Learning Outcomes
+###  Learning Outcomes
 
 Practical implementation of OOP
 
@@ -207,7 +207,7 @@ Real-world system modeling
 
 ---
 
-### 👨‍💻 Author
+###  Author
 
 Muhammad Anas \
 BS Computer Science
