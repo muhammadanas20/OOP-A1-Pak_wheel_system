@@ -1,7 +1,7 @@
 #ifndef LISTING_H
 #define LISTING_H
-#include "Vehicle.h"
-#include "CarSpecification.h"
+#include "../vehicle/vehicle.h"
+#include "../vehicle/carSpecification.h"
 
 class Listing {
 private:

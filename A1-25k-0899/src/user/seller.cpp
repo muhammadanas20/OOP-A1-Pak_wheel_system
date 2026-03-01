@@ -1,4 +1,4 @@
-#include "Seller.h"
+#include "seller.h"
 
 Seller::Seller(string id,string n,string p,string c)
     : User(id,n,p,c) {
@@ -8,12 +8,12 @@ Seller::Seller(string id,string n,string p,string c)
 void Seller::login(){ cout<<"Seller logged in\n"; }
 void Seller::logout(){ cout<<"Seller logged out\n"; }
 
-void Seller::postAd(Listing l){
+void Seller::postAd(Listing *l){
     if(listingCount<10)
         listings[listingCount++] = l;
 }
 
 void Seller::viewMyAds(){
     for(int i=0;i<listingCount;i++)
-        listings[i].display();
+        listings[i]->display();
 }

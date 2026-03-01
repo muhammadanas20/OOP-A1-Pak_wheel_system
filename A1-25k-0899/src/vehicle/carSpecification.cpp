@@ -1,4 +1,4 @@
-#include "CarSpecification.h"
+#include "carSpecification.h"
 
 CarSpecification::CarSpecification() : MAX_MILEAGE(500000) {
     mileage = 0;
@@ -6,16 +6,7 @@ CarSpecification::CarSpecification() : MAX_MILEAGE(500000) {
     accidentFree = true;
     inspected = false;
 }
-CarSpecification& CarSpecification::operator=(const CarSpecification& c) {
-    if (this != &c) {
-        mileage = c.mileage;
-        condition = c.condition;
-        accidentFree = c.accidentFree;
-        inspected = c.inspected;
-        // MAX_MILEAGE is const → cannot change (that's fine)
-    }
-    return *this;
-}
+
 CarSpecification::CarSpecification(int m, string c, bool a, bool i)
     : MAX_MILEAGE(500000) {
     mileage = m;

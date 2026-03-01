@@ -1,6 +1,6 @@
 #ifndef FAVORITELIST_H
 #define FAVORITELIST_H
-#include "Listing.h"
+#include "../listing/listing.h"
 
 class FavoriteList {
 private:
@@ -14,5 +14,6 @@ public:
     void removeFavorite(int index);
     void viewFavorites() const;
     bool isEmpty() const;
+    int getCount() const;
 };
 #endif

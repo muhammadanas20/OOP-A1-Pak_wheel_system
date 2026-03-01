@@ -1,4 +1,4 @@
-#include "Listing.h"
+#include "listing.h"
 int Listing::totalListings = 0;
 Listing::Listing() { listingId = ++totalListings; price = 0; city = "Unknown"; isApproved = false; }
 Listing::Listing(Vehicle v, CarSpecification s, double p, string c) : car(v), specs(s) {

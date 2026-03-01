@@ -1,7 +1,7 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-#include "User.h"
-#include "Listing.h"
+#include "user.h"
+#include "../listing/listing.h"
 
 class Admin : public User {
 private:

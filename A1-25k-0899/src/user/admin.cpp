@@ -1,4 +1,4 @@
-#include "Admin.h"
+#include "admin.h"
 int Admin::totalAdmins = 0;
 Admin::Admin() : TAX_RATE(0.05) {
     totalAdmins++; approvedAds = 0; removedAds = 0; adminRole = "Moderator";

@@ -1,4 +1,4 @@
-#include "Buyer.h"
+#include "buyer.h"
 
 Buyer::Buyer(string id, string n, string p, string c)
     : User(id,n,p,c) {

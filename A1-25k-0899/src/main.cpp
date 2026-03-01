@@ -1,7 +1,7 @@
-#include "marketplaceSystem.h"
-#include "Seller.h"
-#include "Buyer.h"
-#include "Admin.h"
+#include "../system/marketplaceSystem.h"
+#include "../user/seller.h"
+#include "../user/buyer.h"
+#include "../user/admin.h"
 
 int main() {
 
@@ -11,7 +11,7 @@ int main() {
 
     Seller seller("S1","Ali","0300","Karachi");
     seller.login();
-    seller.postAd(l1);
+    seller.postAd(&l1);
 
     Admin admin;
     admin.approveListing(l1);

@@ -1,4 +1,4 @@
-#include "Message.h"
+#include "message.h"
 Message::Message() { isRead = false; isArchived = false; }
 Message::Message(string s, string r, string c) : senderId(s), receiverId(r), content(c) { isRead = false; isArchived = false; }
 Message::Message(const Message& m) : senderId(m.senderId), receiverId(m.receiverId), content(m.content), isRead(m.isRead), isArchived(m.isArchived) {}

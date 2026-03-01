@@ -1,9 +1,9 @@
 #ifndef BUYER_H
 #define BUYER_H
 
-#include "User.h"
-#include "Listing.h"
-#include "Message.h"
+#include "user.h"
+#include "../listing/listing.h"
+#include "../messaging/message.h"
 
 class Buyer : public User {
 private:
