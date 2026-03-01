@@ -4,16 +4,21 @@
 #include "user.h"
 #include "../listing/listing.h"
 #include "../messaging/message.h"
+#include "../favorites/favoritesList.h"
 
 class Buyer : public User {
 private:
-    Listing* favorites[10];
-    int favCount;
+    double maxBudget;
+    Message inbox[20];
+    int inboxCount;
+    FavoriteList favorites;
 
 public:
     Buyer(string, string, string, string);
-    void login();
-    void logout();
+    void login() override;
+    void logout() override;
+    void searchCar();
+    void sendMessage();
     void saveToFavorites(Listing*);
     void viewFavorites();
 };

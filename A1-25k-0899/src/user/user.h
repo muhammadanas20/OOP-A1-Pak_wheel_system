@@ -15,8 +15,9 @@ public:
     User();
     User(string id, string n, string p, string c);
     User(const User& other);
-    void login();
-    void logout();
+    virtual ~User() {}
+    virtual void login() = 0;
+    virtual void logout() = 0;
     void viewProfile() const;
     void updateProfile(string newCity);
 };

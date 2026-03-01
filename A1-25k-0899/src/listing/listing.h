@@ -3,7 +3,8 @@
 #include "../vehicle/vehicle.h"
 #include "../vehicle/carSpecification.h"
 
-class Listing {
+class Listing
+{
 private:
     static int totalListings; // Static 2
     int listingId;
@@ -12,14 +13,18 @@ private:
     double price;
     string city;
     bool isApproved;
+
 public:
     Listing();
     Listing(Vehicle v, CarSpecification s, double p, string c);
-    Listing(const Listing& l);
+    Listing(const Listing &l);
+    Listing& operator=(const Listing& l);
+    int getId() const;
     void publish();
     void expire();
     void display() const;
     void updatePrice(double p);
+    string getCity() const;
     static int getTotalListings(); // Static Function 2
 };
 #endif

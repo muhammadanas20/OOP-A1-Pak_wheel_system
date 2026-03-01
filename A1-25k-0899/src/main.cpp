@@ -1,7 +1,7 @@
-#include "../system/marketplaceSystem.h"
-#include "../user/seller.h"
-#include "../user/buyer.h"
-#include "../user/admin.h"
+#include "system/marketplaceSystem.h"
+#include "user/seller.h"
+#include "user/buyer.h"
+#include "user/admin.h"
 
 int main() {
 
@@ -22,6 +22,12 @@ int main() {
     Buyer buyer("B1","Ahmed","0311","Lahore");
     buyer.login();
     buyer.saveToFavorites(&l1);
+
+    User* users[3] = {&seller, &buyer, &admin};
+    for (int i = 0; i < 3; i++) {
+        users[i]->viewProfile();
+        users[i]->logout();
+    }
 
     system.showListings();
     buyer.viewFavorites();

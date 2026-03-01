@@ -13,6 +13,7 @@ private:
 public:
     CarSpecification();
     CarSpecification(int m, string c, bool a, bool i);
+    CarSpecification& operator=(const CarSpecification&);
     void updateMileage(int m);
     void markInspected();
     void showInspectionReport() const;

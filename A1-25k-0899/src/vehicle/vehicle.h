@@ -18,6 +18,7 @@ public:
     Vehicle();
     Vehicle(string, string, int, int, string, string);
     Vehicle(const Vehicle&);
+    Vehicle& operator=(const Vehicle&);
 
     void displaySpecs() const;
     bool matchesFilter(string, int) const;

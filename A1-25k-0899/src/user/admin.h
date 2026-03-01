@@ -13,6 +13,8 @@ private:
 public:
     Admin();
     Admin(const Admin& other);
+    void login() override;
+    void logout() override;
     void approveListing(Listing& l);
     void viewSystemStats();
     void resetApprovalCount();

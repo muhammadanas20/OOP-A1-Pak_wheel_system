@@ -28,6 +28,18 @@ Vehicle::Vehicle(const Vehicle& v) {
     transmission = v.transmission;
 }
 
+Vehicle& Vehicle::operator=(const Vehicle& v) {
+    if (this != &v) {
+        brand = v.brand;
+        model = v.model;
+        year = v.year;
+        engineCC = v.engineCC;
+        fuelType = v.fuelType;
+        transmission = v.transmission;
+    }
+    return *this;
+}
+
 void Vehicle::displaySpecs() const {
     cout << brand << " " << model << " (" << year << ") "
          << engineCC << "cc " << fuelType << " " << transmission << endl;

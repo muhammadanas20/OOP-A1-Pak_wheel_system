@@ -15,6 +15,16 @@ CarSpecification::CarSpecification(int m, string c, bool a, bool i)
     inspected = i;
 }
 
+CarSpecification& CarSpecification::operator=(const CarSpecification& other) {
+    if (this != &other) {
+        mileage = other.mileage;
+        condition = other.condition;
+        accidentFree = other.accidentFree;
+        inspected = other.inspected;
+    }
+    return *this;
+}
+
 bool CarSpecification::isReliable() const {
     return accidentFree && mileage < MAX_MILEAGE;
 }

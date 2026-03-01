@@ -8,8 +8,7 @@ private:
     string senderId;
     string receiverId;
     string content;
-    bool isRead;
-    bool isArchived;
+    string timeStamp;
 public:
     Message();
     Message(string s, string r, string c);

@@ -159,8 +159,9 @@ OnlineCarMarketplace/
 Using g++:
 
 ```
-g++ *.cpp -o marketplace
-./marketplace
+cd src
+g++ main.cpp favorites/*.cpp listing/*.cpp messaging/*.cpp system/*.cpp user/*.cpp vehicle/*.cpp -o marketplaceSystem
+./marketplaceSystem
 ```
 Or compile using any C++ IDE.
 
